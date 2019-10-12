@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>激核工具</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">	
+	<link rel="stylesheet" type="text/css" href="../love/css/reset-min.css">
+	<link rel="stylesheet" type="text/css" href="../love/css/my-certificate.css">
+</head>
+<body>
+	<div class="container">
+		<div class="head">
+			<img class="head-pic" src="../love/images/defaultHead.png">
+			<span class="head-nickname"></span>
+			<div class="head-add-btn">添加情缘证</div>
+		</div>
+		<div class="content">
+			<span class="title">我的情缘证</span>
+			<div class="list-wrap">
+				<!-- <div class="item">
+					<span>唐唐&GG</span>
+					<span class="item-look">查看</span>
+				</div> -->
+			</div>
+			<p>1、情缘证用作记录和留念，不代表更多意义</p>
+			<p>2、每个人最多拥有20张情缘证</p>
+		</div>
+		
+	 </div>
+</body>
+<script type="text/javascript">	
+	(function(doc,win){
+		var resizeEvt = 'orientationchange' in window ? 'orientationchange': 'resize';
+		var recalc = function(){
+			var clientWidth = doc.documentElement.clientWidth;				
+			doc.documentElement.style.fontSize = clientWidth/16 + 'px';
+		}
+		win.addEventListener(resizeEvt,recalc,false);
+		doc.addEventListener('DOMContentLoaded',recalc,false);
+	})(document,window)
+</script>
+<script type="text/javascript" src="../love/js/jquery.js"></script>
+<script type="text/javascript" src="../love/js/my-certificate.js"></script>
+</html>
